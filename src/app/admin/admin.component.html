@@ -1,1 +1,20 @@
-<p>admin works!</p>
+<div class="container-fluid">
+	<h3>Available Movies</h3>
+	<table class="table table-info">
+		<tr>
+			<th>Id</th>
+			<th>Tilte</th>
+			<th>Year</th>
+			<th>Is Favorite?</th>
+			<th></th>
+		</tr>
+
+		<tr *ngFor = "let movie of movies">
+			<td>{{movie.id}}</td>
+			<td>{{movie.title}}</td>
+			<td>{{movie.year}}</td>
+			<td>{{movie.fav}}</td>
+			<td><button class="btn btn-primary" (click)="favorite(movie.id)" *ngIf="!movie.fav">Make Favorite</button></td>
+		</tr>	
+	</table>
+</div>
