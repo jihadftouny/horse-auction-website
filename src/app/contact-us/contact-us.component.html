@@ -14,9 +14,9 @@
         <div class="col-sm-1"></div>
     </div>
 
-    <div class="row mx-4 pb-5">
+    <div class="row mx-4 pb-3">
         <div class="col-sm-1"></div>
-        <div class="col-sm-4 bg-one">
+        <div class="col-sm-4 pt-2 bg-one text-muted">
             <p class="pt-2">ADDRESS</p>
             <p class="ps-1">Mouseitbeh</p>
             <p class="ps-1">
@@ -37,6 +37,50 @@
             <img src="../../assets/images/maps.png" class="w-100" style="height: 300px; object-fit: cover;"
                 alt="contactus">
         </div>
+
+    </div>
+
+    <div class="row mx-4 pb-5">
+        <div class="col-sm-1"></div>
+        <div class="col py-3 px-3 bg-one">
+
+            <div class="col h3">Send a Message</div>
+            <br>
+
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col form-floating mb-2">
+                        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                        <label for="name">&nbsp;&nbsp;&nbsp;Name</label>
+                    </div>
+                    <div class="col form-floating mb-2">
+                        <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                        <label for="email">&nbsp;&nbsp;&nbsp;Email</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-4">
+                        <input type="number" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                        <label for="phone">&nbsp;&nbsp;&nbsp;Phone Number</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-2">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                        <label for="subject">&nbsp;&nbsp;&nbsp;Subject</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col mb-3">
+                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Comment goes here . . ."></textarea>
+                      </div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
         <div class="col-sm-1"></div>
     </div>
+
 </body>
