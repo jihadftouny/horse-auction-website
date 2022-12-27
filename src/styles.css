@@ -1,1 +1,51 @@
 /* You can add global styles to this file, and also import other style files */
+
+.bg-one{
+    background-color: #FFFFFF;
+}
+
+.bg-two{
+    background-color: #F4F4F4;
+}
+
+.bg-three{
+    background-color: #070707;
+}
+
+.bg-four{
+    background-color: #002C3D;
+}
+
+.bg-five{
+    background-color: #9C6615;
+}
+
+.bg-six{
+    background-color: #F46036;
+}
+
+
+//text
+.text-one{
+    color: #FFFFFF;
+}
+
+.text-two{
+    color: #F4F4F4;
+}
+
+.text-three{
+    color: #070707;
+}
+
+.text-four{
+    color: #002C3D;
+}
+
+.text-five{
+    color: #9C6615;
+}
+
+.text-six{
+    color: #F46036;
+}

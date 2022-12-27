@@ -10,6 +10,7 @@ import { AdminComponent } from './admin/admin.component';
 import { HorseCardComponent } from './horse-card/horse-card.component';
 import { HorseModalComponent } from './horse-modal/horse-modal.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     AdminComponent,
     HorseCardComponent,
     HorseModalComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
