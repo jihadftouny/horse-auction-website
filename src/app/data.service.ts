@@ -4,14 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class DataService {
-	
-  movies = [
-    {id: 1, title: "Titanic", 	 year: 1997, fav: true, img: "titanic.jpg"},
-    {id: 2, title: "The Matrix", year: 1999, fav: false, img: "the_matrix.jpg"},
-    {id: 3, title: "Twilight", 	 year: 2008, fav: true, img: "twilight.jpg"},
-    {id: 4, title: "Avatar", 	 year: 2009, fav: false, img: "avatar.jpg"}
+
+  horses = [
+    { id: 1, name: "Horse1", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 9000, isSold: false, img: "horse1.png", img2: "horse1a.png" },
+    { id: 2, name: "Horse2", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 8900, isSold: false, img: "horse1.png", img2: "horse1a.png" },
+    { id: 3, name: "Horse3", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 9000, isSold: false, img: "horse1.png", img2: "horse1a.png" },
+    { id: 4, name: "Horse4", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 9000, isSold: false, img: "horse1.png", img2: "horse1a.png" },
+    { id: 5, name: "Horse5", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 9000, isSold: false, img: "horse1.png", img2: "horse1a.png" },
+    { id: 6, name: "Horse6", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 9000, isSold: false, img: "horse1.png", img2: "horse1a.png" },
+    { id: 7, name: "Horse7", year: 1997, gender: "Stallion", color:"Chestnut", currentBid: 8500, maxBid: 9000, isSold: false, img: "horse1.png", img2: "horse1a.png" },
   ];
 
   constructor() { }
-  
+
 }

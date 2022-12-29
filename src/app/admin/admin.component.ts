@@ -8,18 +8,19 @@ import { DataService } from '../data.service';
 })
 export class AdminComponent implements OnInit {
 	
-  movies;
+  horses;
   
   constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
-	  this.movies = this.dataService.movies;
+	  this.horses = this.dataService.horses;
   }
   
-  public favorite(id:number) {
-	  for(let movie of this.movies){
-		  if(movie.id==id) {
-			  movie.fav = true;
+  public setSold(id:number) {
+	  for(let horse of this.horses){
+		  if(horse.id==id) {
+			  horse.isSold = true;
+        horse.currentbid = horse.maxbid;
 		  }
 	  }
   }

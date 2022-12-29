@@ -1,0 +1,95 @@
+.bg-one{
+    background-color: #FFFFFF;
+}
+
+.bg-two{
+    background-color: #F4F4F4;
+}
+
+.bg-three{
+    background-color: #001D29;
+}
+
+.bg-four{
+    background-color: #1D1D1D;
+}
+
+.bg-five{
+    background-color: #9C6615;
+}
+
+.bg-six{
+    background-color: #F46036;
+}
+
+.bg-seven{
+    background-color: #3D3D3D;
+}
+
+
+
+//text
+.text-one{
+    color: #FFFFFF;
+}
+
+.text-two{
+    color: #F4F4F4;
+}
+
+.text-three{
+    color: #070707;
+}
+
+.text-four{
+    color: #002C3D;
+}
+
+.text-five{
+    color: #9C6615;
+}
+
+.text-six{
+    color: #F46036;
+}
+
+.text-seven{
+    color: #3D3D3D;
+}
+
+//buttons
+
+.btn-one{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.btn-two{
+    background-color: #F4F4F4;
+    color: black;
+}
+
+.btn-three{
+    background-color: #001D29;
+    color: white;
+}
+
+.btn-four{
+    background-color: #1D1D1D;
+    color: white;
+}
+
+.btn-five{
+    background-color: #9C6615;
+    color: white;
+}
+
+.btn-six{
+    background-color: #F46036;
+    color: black;
+}
+
+.btn-seven{
+    background-color: #3D3D3D;
+    color: white;
+}

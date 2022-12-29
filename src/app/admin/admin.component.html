@@ -1,20 +1,34 @@
 <div class="container-fluid">
-	<h3>Available Movies</h3>
-	<table class="table table-info">
-		<tr>
-			<th>Id</th>
-			<th>Tilte</th>
-			<th>Year</th>
-			<th>Is Favorite?</th>
-			<th></th>
-		</tr>
+	<h3 class="display-3">Horses on Sale</h3>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Born</th>
+				<th>Gender</th>
+				<th>Color</th>
+				<th>Current Bid</th>
+				<th>Max Bid</th>
+				<th>Is Sold?</th>
+				<th></th>
+			</tr>
+		</thead>
 
-		<tr *ngFor = "let movie of movies">
-			<td>{{movie.id}}</td>
-			<td>{{movie.title}}</td>
-			<td>{{movie.year}}</td>
-			<td>{{movie.fav}}</td>
-			<td><button class="btn btn-primary" (click)="favorite(movie.id)" *ngIf="!movie.fav">Make Favorite</button></td>
-		</tr>	
+		<tbody>
+			<tr *ngFor="let horse of horses">
+				<td>{{horse.id}}</td>
+				<td>{{horse.name}}</td>
+				<td>{{horse.year}}</td>
+				<td>{{horse.gender}}</td>
+				<td>{{horse.color}}</td>
+				<td>{{horse.currentbid}}</td>
+				<td>{{horse.maxbid}}</td>
+				<td>{{horse.isSold}}</td>
+				<td><button class="btn btn-dark" (click)="setSold(horse.id)" *ngIf="!horse.isSold">Set as
+						Sold</button>
+				</td>
+			</tr>
+		</tbody>
 	</table>
 </div>

@@ -8,24 +8,61 @@ import { DataService } from '../data.service';
 })
 export class HomeComponent implements OnInit {
 
-  movies;
+  horses;
+
+  selectedHorseId: number;
+  selectedHorseName: String;
+  selectedHorseYear: number;
+  selectedHorseGender: String;
+  selectedHorseColor: String;
+  selectedHorseImg: String;
+  selectedHorseImg2: String;
+  selectedHorseCurrentBid: number;
+  selectedHorseMaxBid: number;
+  selectedHorseisSold: boolean;
 
   constructor(public dataService: DataService) { }
 
   ngOnInit(): void {
-	  this.movies = this.dataService.movies;
-  }
-  
-  public watch() {
-	  alert("Thank you for watching!");
-  }
-  
-  public unfavorite(id:number) {
-	  for(let movie of this.movies){
-		  if(movie.id==id) {
-			  movie.fav = false;
-		  }
-	  }
+    this.horses = this.dataService.horses;
   }
 
+  public bid(id: number) {
+    for (let horse of this.horses) {
+      if (horse.id == id) {
+        alert("You increase the bid for " + horse.name + " by a 100$!");
+        horse.currentBid += 100;
+        if (horse.currentBid >= horse.maxBid) {
+          horse.isSold = true;
+        }
+      }
+    }
+  }
+
+  public openInfo(id: number) {
+    for (let horse of this.horses) {
+      if (horse.id == id) {
+        horse.fav = false;
+      }
+    }
+  }
+
+  selectHorse(id: number) {
+    for (let horse of this.horses) {
+      if (horse.id == id) {
+        this.selectedHorseId = horse.id;
+        this.selectedHorseName = horse.name;
+        this.selectedHorseYear = horse.year;
+        this.selectedHorseGender = horse.gender;
+        this.selectedHorseColor = horse.color;
+        this.selectedHorseImg = horse.img;
+        this.selectedHorseImg2 = horse.img2;
+        this.selectedHorseCurrentBid = horse.currentBid;
+        this.selectedHorseMaxBid = horse.maxBid;
+        this.selectedHorseisSold = horse.isSold;
+      }
+    }
+  }
 }
+
+
