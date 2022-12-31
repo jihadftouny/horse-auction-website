@@ -48,36 +48,36 @@
             <div class="col h3 text-four">Send a Message</div>
             <br>
 
-            <form action="/action_page.php">
+            <form [formGroup]="formdata" (ngSubmit)="onClickSubmit(formdata.value)">
                 <div class="row">
                     <div class="col form-floating mb-2">
-                        <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+                        <input formControlName="nameid" [(ngModel)]="message.id" type="text" class="form-control" id="name" placeholder="Name" name="name">
                         <label for="name">&nbsp;&nbsp;&nbsp;Name</label>
                     </div>
                     <div class="col form-floating mb-2">
-                        <input type="text" class="form-control" id="email" placeholder="Email" name="email">
+                        <input formControlName="emailid" [(ngModel)]="message.email" type="text" class="form-control" id="email" placeholder="Email" name="email">
                         <label for="email">&nbsp;&nbsp;&nbsp;Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-floating mb-4">
-                        <input type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
+                        <input formControlName="phoneid" [(ngModel)]="message.phone" type="text" class="form-control" id="phone" placeholder="Phone Number" name="phone">
                         <label for="phone">&nbsp;&nbsp;&nbsp;Phone Number</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-floating mb-2">
-                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                        <input formControlName="subjectid" [(ngModel)]="message.subject" type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
                         <label for="subject">&nbsp;&nbsp;&nbsp;Subject</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col mb-3">
-                        <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Comment goes here . . ."></textarea>
+                        <textarea formControlName="commentid" [(ngModel)]="message.messageBody" class="form-control" rows="5" id="comment" name="text" placeholder="Comment goes here . . ."></textarea>
                       </div>
                 </div>
                 
-                <button type="submit" class="btn btn-seven rounded-0">Submit</button>
+                <button type="submit" [disabled] = "!formdata.valid" (click)="createMessage() "class="btn btn-seven rounded-0">Submit</button>
             </form>
 
         </div>

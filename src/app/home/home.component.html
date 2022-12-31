@@ -38,11 +38,12 @@
 	<div class="row display-5 px-5 pt-5">Current Horses Available</div>
 	<!-- Horse Cards-->
 	<div class="row px-5 pt-3">
-		
+
 		<div class="col-xxl-3 col-md-4 col-sm-6 col-12 pb-5" *ngFor="let horse of horses">
 			<div class="card shadow rounded-0 border-0">
 				<div class="card-header rounded-0 text-white bg-seven">{{horse.name}}</div>
-				<img class="card-img-top rounded-0" style="height: 300px" src="../../assets/images/testhorses/{{horse.img}}" alt="Card image">
+				<img class="card-img-top rounded-0" style="height: 300px"
+					src="../../assets/images/testhorses/{{horse.img}}" alt="Card image">
 				<div class="card-body text-seven">
 					<div class="row px-2">
 						<div class="col">
@@ -124,33 +125,120 @@
 
 			<!-- The Modal -->
 			<div class="modal" id="myModal">
-				<div class="modal-dialog">
-					<div class="modal-content">
+				<div class="modal-dialog modal-lg">
+					<div class="modal-content rounded-0">
 
 						<!-- Modal Header -->
 						<div class="modal-header">
-							<h4 class="modal-title">Modal Heading</h4>
+							<h4 class="modal-title">{{selectedHorseName}}</h4>
 							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 						</div>
 
 						<!-- Modal body -->
 						<div class="modal-body">
-							{{selectedHorseId}}
-							{{selectedHorseName}}
-							{{selectedHorseYear}}
+							<div class="row">
+								<div class="col-sm-6 col-12 d-flex justify-content-center">
+									<div id="demo" class="carousel slide" data-bs-ride="carousel">
+										<!-- The slideshow/carousel -->
+										<div class="carousel-inner">
+											<div class="carousel-item active">
+												<img src="../../assets/images/testhorses/{{selectedHorseImg}}"
+													style="height:270px" alt="Los Angeles" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../../assets/images/testhorses/{{selectedHorseImg2}}"
+													style="height:270px" alt="Chicago" class="d-block w-100">
+											</div>
+											<div class="carousel-item">
+												<img src="../../assets/images/testhorses/{{selectedHorseImg3}}"
+													style="height:270px" alt="New York" class="d-block w-100">
+											</div>
+										</div>
+
+										<!-- Left and right controls/icons -->
+										<button class="carousel-control-prev" type="button" data-bs-target="#demo"
+											data-bs-slide="prev">
+											<span class="carousel-control-prev-icon"></span>
+										</button>
+										<button class="carousel-control-next" type="button" data-bs-target="#demo"
+											data-bs-slide="next">
+											<span class="carousel-control-next-icon"></span>
+										</button>
+									</div>
+								</div>
+								<div class="col-sm-6 col-12 text-four">
+									<h5 class="pt-3 pt-sm-1">DETAILS</h5>
+									<p class="p-0 my-1"><b>Name: </b>{{selectedHorseName}}</p>
+									<p class="p-0 my-1"><b>Born: </b>{{selectedHorseYear}}</p>
+									<p class="p-0 my-1"><b>Gender: </b>{{selectedHorseGender}}</p>
+									<p class="p-0 my-1"><b>Breed: </b>{{selectedHorseBreed}}</p>
+									<p class="p-0 my-1"><b>Color: </b>{{selectedHorseColor}}</p>
+									<p class="p-0 my-1"><b>Size: </b>{{selectedHorseSize}}</p>
+									<p class="p-0 my-1"><b>Owner: </b>{{selectedHorseOwner}}</p>
+									<br>
+
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-sm-6 col-12 text-four">
+								</div>
+								<div class="col-sm-6 col-12 text-four">
+									<h5>BIDS</h5>
+									<b>Current: </b>{{selectedHorseCurrentBid}}$<br>
+									<b>Max: </b>{{selectedHorseMaxBid}}$<br *ngIf="!selectedHorseisSold"><br>
+									<button class="btn btn-five rounded-0" (click)="bid(selectedHorseId)"
+										*ngIf="!selectedHorseisSold">Bid
+										100$</button>
+									<div class="card-footer border-0 pt-0">
+										<br><span class="text-six" style="font-weight:bold"
+											*ngIf="selectedHorseisSold">SOLD!</span>
+									</div>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col text-four">
+									<h5>GENERATIONS</h5>
+									<h6>1. Generation</h6>
+									<p>
+										{{selectedHorseGen1}}
+									</p>
+									<h6>2. Generation</h6>
+									<p>
+										{{selectedHorseGen2}}
+									</p>
+									<h6>3. Generation</h6>
+									<p>
+										{{selectedHorseGen3}}
+									</p>
+								</div>
+							</div>
 						</div>
 
 						<!-- Modal footer -->
 						<div class="modal-footer">
-							<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-						</div>
 
+
+							<button class="btn btn-five rounded-0" (click)="bid(selectedHorseId)"
+								*ngIf="!selectedHorseisSold">Bid
+								100$</button>
+
+							<span class="text-six pe-3" style="font-weight:bold;"
+								*ngIf="selectedHorseisSold">SOLD!</span>
+
+
+
+							<button type="button" class="btn btn-five rounded-0 " data-bs-dismiss="modal">Close</button>
+
+
+						</div>
 					</div>
+
 				</div>
 			</div>
 		</div>
-
 	</div>
+
 
 
 

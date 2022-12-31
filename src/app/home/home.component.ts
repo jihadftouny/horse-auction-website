@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from '../data.service';
 
+import { DomSanitizer } from '@angular/platform-browser';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,14 +14,22 @@ export class HomeComponent implements OnInit {
 
   selectedHorseId: number;
   selectedHorseName: String;
-  selectedHorseYear: number;
   selectedHorseGender: String;
+  selectedHorseYear: number;
   selectedHorseColor: String;
+  selectedHorseSize: String;
+  selectedHorseOwner: String;
+  selectedHorseisSold: boolean;
+  selectedHorseYtLink: String;
   selectedHorseImg: String;
   selectedHorseImg2: String;
+  selectedHorseImg3: String;
   selectedHorseCurrentBid: number;
   selectedHorseMaxBid: number;
-  selectedHorseisSold: boolean;
+  selectedHorseGen1: String;
+  selectedHorseGen2: String;
+  selectedHorseGen3: String;
+  selectedHorseBreed: String;
 
   constructor(public dataService: DataService) { }
 
@@ -32,8 +42,11 @@ export class HomeComponent implements OnInit {
       if (horse.id == id) {
         alert("You increase the bid for " + horse.name + " by a 100$!");
         horse.currentBid += 100;
+        this.selectedHorseCurrentBid = horse.currentBid;
+        
         if (horse.currentBid >= horse.maxBid) {
           horse.isSold = true;
+          this.selectedHorseisSold = horse.isSold;
         }
       }
     }
@@ -57,9 +70,17 @@ export class HomeComponent implements OnInit {
         this.selectedHorseColor = horse.color;
         this.selectedHorseImg = horse.img;
         this.selectedHorseImg2 = horse.img2;
+        this.selectedHorseImg3 = horse.img3;
         this.selectedHorseCurrentBid = horse.currentBid;
         this.selectedHorseMaxBid = horse.maxBid;
         this.selectedHorseisSold = horse.isSold;
+        this.selectedHorseGen1 = horse.gen1;
+        this.selectedHorseGen2 = horse.gen2;
+        this.selectedHorseGen3 = horse.gen3;
+        this.selectedHorseYtLink = horse.ytLink;
+        this.selectedHorseOwner = horse.owner;
+        this.selectedHorseSize = horse.size;
+        this.selectedHorseBreed = horse.breed;
       }
     }
   }

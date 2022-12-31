@@ -16,6 +16,7 @@ export class AdminComponent implements OnInit {
   ngOnInit(): void {
 	  this.horses = this.dataService.horses;
     this.messages = this.dataService.messages;
+    this.messages = this.dataService.getMessages(); 
   }
   
   public setSold(id:number) {
