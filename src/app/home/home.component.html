@@ -41,14 +41,14 @@
 		
 		<div class="col-xxl-3 col-md-4 col-sm-6 col-12 pb-5" *ngFor="let horse of horses">
 			<div class="card shadow rounded-0 border-0">
-				<div class="card-header rounded-0 text-white bg-seven">Lil' Horsey</div>
-				<img class="card-img-top" src="../../assets/images/testhorses/{{horse.img}}" alt="Card image">
+				<div class="card-header rounded-0 text-white bg-seven">{{horse.name}}</div>
+				<img class="card-img-top rounded-0" style="height: 300px" src="../../assets/images/testhorses/{{horse.img}}" alt="Card image">
 				<div class="card-body text-seven">
 					<div class="row px-2">
 						<div class="col">
 							<p><b>OWNER</b>
 								<br>
-								{{horse.name}}
+								{{horse.owner}}
 							</p>
 						</div>
 						<div class="col">
@@ -69,6 +69,20 @@
 							<p><b>COLOR</b>
 								<br>
 								{{horse.color}}
+							</p>
+						</div>
+					</div>
+					<div class="row px-2">
+						<div class="col">
+							<p><b>BREED</b>
+								<br>
+								{{horse.breed}}
+							</p>
+						</div>
+						<div class="col">
+							<p><b>SIZE</b>
+								<br>
+								{{horse.size}}
 							</p>
 						</div>
 					</div>
