@@ -22,12 +22,37 @@
 				<td>{{horse.year}}</td>
 				<td>{{horse.gender}}</td>
 				<td>{{horse.color}}</td>
-				<td>{{horse.currentbid}}</td>
-				<td>{{horse.maxbid}}</td>
+				<td>{{horse.currentBid}}</td>
+				<td>{{horse.maxBid}}</td>
 				<td>{{horse.isSold}}</td>
 				<td><button class="btn btn-dark" (click)="setSold(horse.id)" *ngIf="!horse.isSold">Set as
 						Sold</button>
 				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3 class="display-3">Messages</h3>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Phone</th>
+				<th>Subject</th>
+				<th>Message</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr *ngFor="let message of messages">
+				<td>{{message.id}}</td>
+				<td>{{message.name}}</td>
+				<td>{{message.email}}</td>
+				<td>{{message.phone}}</td>
+				<td>{{message.subject}}</td>
+				<td>{{message.messageBody}}</td>
 			</tr>
 		</tbody>
 	</table>

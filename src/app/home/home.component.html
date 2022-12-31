@@ -37,8 +37,9 @@
 
 	<div class="row display-5 px-5 pt-5">Current Horses Available</div>
 	<!-- Horse Cards-->
-	<div class="row px-5">
-		<div class="col-xxl-4 col-sm-6 col-10 py-2" *ngFor="let horse of horses">
+	<div class="row px-5 pt-3">
+		
+		<div class="col-xxl-3 col-md-4 col-sm-6 col-12 pb-5" *ngFor="let horse of horses">
 			<div class="card shadow rounded-0 border-0">
 				<div class="card-header rounded-0 text-white bg-seven">Lil' Horsey</div>
 				<img class="card-img-top" src="../../assets/images/testhorses/{{horse.img}}" alt="Card image">
@@ -73,7 +74,8 @@
 					</div>
 				</div>
 				<div class="card-body border-0 pt-0 d-flex justify-content-center">
-					<button class="btn btn-five rounded-0" (click)="selectHorse(horse.id)" data-bs-toggle="modal" data-bs-target="#myModal">
+					<button class="btn btn-five rounded-0" (click)="selectHorse(horse.id)" data-bs-toggle="modal"
+						data-bs-target="#myModal">
 						See More
 					</button>
 				</div>
@@ -102,7 +104,7 @@
 					<br><span class="text-six" style="font-weight:bold" *ngIf="horse.isSold">SOLD!</span>
 				</div>
 
-				
+
 
 			</div>
 
@@ -133,6 +135,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 
