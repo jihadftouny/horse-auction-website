@@ -22,8 +22,8 @@ export class DataService {
       img: "horse1.jpg",
       img2: "horse11.jpg",
       img3: "horse111.jpg",
-      currentBid: 8500,
-      maxBid: 9000,
+      currentBid: 8000,
+      maxBid: 11000,
       gen1: " sporterfolgr. NK: Indigo (v. Florencio I) DRE A (NL), Kiona (v. Florencio I) DRE A (NL) ",
       gen2: " sporterfolgr. NK: Sam by Guert (v. Spielberg) DRE intern. Junioren-Tour erfolgr., Dior (v. Sandreo) DRE M (NL) ",
       gen3: " sporterfolgr. NK: Sandokan (v. Ferro) DRE intern. IM I erfolgr., Voltage (v. Voltaire) DRE S (ESP), Zeppo (v. Lord Sinclair I) DRE A (NL), Terline (v. Ferro) DRE L (NL), Rockefeller (v. Welt Hit II) FAP S intern. erfolgr., Madison (v. Zeoliet) DRE L (NL)   "
@@ -42,8 +42,8 @@ export class DataService {
       img: "horse2.jpg",
       img2: "horse22.jpg",
       img3: "horse222.jpg",
-      currentBid: 8500,
-      maxBid: 9000,
+      currentBid: 8100,
+      maxBid: 9500,
       gen1: " Whitney RPF siegr.; 3 sporterfolgr. NK: Fantastic sunrise S (v. Fürstenball) DPF L/DRE M* erfolgr., Diamond Light S (v. Dancier) DPF A siegr., Florine 17 (v. Fürstenball) RPF erfolgr ",
       gen2: " Gina RPF erfolgr.; 4 sporterfolgr. NK u.a.: Doreen 261 (v. Don Frederico) DRE A* siegr./RPF/DRE A** erfolgr., Daiquiri 85 (v. Don Frederico) DPF M erfolgr., Daikini 2 (v. Don Frederico) RPF erfolgr.  ",
       gen3: " 9 sporterfolgr. NK u.a.: Flying Filou K (v. Forrest xx) DRE M** siegr./DPF A/DRE GP erfolgr., Diddl 6 (v. Dornenkönig) DRE A** siegr./DRE L* erfolgr., Grace 346 (v. Grafenstolz/T.) SPF A** siegr./SPR L erfolgr., Arielle 344 (v. Acordelli) SPR A* erfolgr., Fabius 38 (v. Forrest xx) DRE A* erfolgr., Elliot 60 (v. Eiger I) DPF A/SPF A erfolgr., Lisa 35 (v. Leibwaechter I) RPF/DRE A* erfolgr., Fox white Sox (v. Fielmann) DRE A* erfolgr.   "
@@ -82,8 +82,8 @@ export class DataService {
       img: "horse4.jpg",
       img2: "horse44.jpg",
       img3: "horse444.jpg",
-      currentBid: 8500,
-      maxBid: 9000,
+      currentBid: 7500,
+      maxBid: 9100,
       gen1: " Hannoveraner Stutenstamm 1189709 (Nosily)gekörte Hengste:Flanceur (v. Flamenco), Asti Frizzante (v. Asti Spumante) SPR S* erfolgr.erfolgr. Springpferde:Giggi 9 ",
       gen2: " Charleen 9 (v. Cento) SPR intern. 160cm erfolgr., Karleen van Solbackas (v. Arezzo VDL) SPR intern. 125cm (CSIYH) erfolgr., Caruso Cash (v. Chasseur I) SPR S* erfolgr., Quantino (v. Quattro B) SPR M*/Viels. intern. CCI2* erfolgr  ",
       gen3: "  3 sporterfolgr. NK: D’Alembert (v. Davignon I) DRE L siegr./DPF A erfolgr., Roncalli G (v. Rivero II) DPF L/DRE L siegr./DRE M erfolgr., Rivaldo 18 (v. Rivero II) DPF M siegr.  "
@@ -122,8 +122,8 @@ export class DataService {
       img: "horse6.jpg",
       img2: "horse66.jpg",
       img3: "horse666.jpg",
-      currentBid: 8500,
-      maxBid: 9000,
+      currentBid: 7500,
+      maxBid: 9200,
       gen1: " 2 sporterfolgr. NK: Astoria 64 (v. Astrix) RPF erfolgr., Aitana Ibiza (v. Asgard’s Ibiza) DRE A* siegr./DPF A erfolgr. ",
       gen2: " 2 gekörte Söhne: Daramis (v. De Niro) RPF/DRE M** siegr., N.N. (v. De Niro; Sport: Donington 4) DPF M/DRE M** siegr./DRE S* erfolgr.; 9 sporterfolgr. NK u.a.: Don Cesar 2 (v. De Niro) DPF L/DRE M* siegr./DPF M/DRE M** erfolgr., Christopher K (v. Christ) DPF A/DRE M* siegr./DPF L/DRE M** erfolgr., Diamond Donner 3 (v. Danone I) DPF L/DRE A* erfolgr., De Nira 2 (v. De Niro) DPF A siegr./DPF L erfolgr., Dacota 15 (v. De Niro) RPF siegr., Warus 25 (v. Weltgeist) SPR E erfolgr.  ",
       gen3: " 1 gekörten Sohn: Gotenkönig (v. Grenadier) DRE L siegr./DRE M erfolgr.; 11 sporterfolgr. NK u.a.: Hamilton 5 (v. Hitchcock) DPF M/DRE S* siegr./DRE IM I erfolgr., Touchless (v. Traunstein) SPF L/SPR S* siegr./SPF M** erfolgr., Gladys W (v. Grenadier) SPR L siegr./SPR S* erfolgr., Kompagnon 2 (v. Kompass/T.) DRE L siegr./DRE M erfolgr., Whitney K 2 (v. Weltmeyer) DRE IM II erfolgr., Gigant 129 (v. Grenadier) RPF/DPF A siegr., Wilma Rudolph (v. Weltmeyer) RPF siegr. sowie Mutter von u.a.: „Ronja M 7 (v. Relevant) DRE S* siegr.“, Konstantin 6 (v. Kompass/T.) DRE M erfolgr., Gordana 2 (v. Grenadier) RPF erfolgr. sowie Mutter von u.a.: „Carina 466 (v. Conteur) DRE IM I erfolgr.“, Metternich 8 (v. Mamori xx) DRE L erfolgr."
