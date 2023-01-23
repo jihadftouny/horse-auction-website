@@ -1,4 +1,7 @@
 # horse-auction-website
-This is a website that provides horse auction services. It utilizes Bootstrap 5 and Angular.
+A concept for a horse auction website developed as part of a university project for the Web Development Advanced course.
 
-This project was created by @BOHASN and I.
+## Authors
+
+- **Jihad Ftouny** - [jihadftouny](https://github.com/jihadftouny)
+- **Siraj Al Zahran** - [BOHASN](https://github.com/BOHASN)
